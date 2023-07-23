@@ -16,17 +16,32 @@
       <!--Header cities box -->
       <div id="header-cities-box">
         <div class="city-box">
-          <button id="st-city-btn" onclick="alert('Loading weather report...')">
+          <button
+            id="st-city-btn"
+            onclick="alert('Loading weather report...')"
+            onmouseover="addShadow(this)"
+            onmouseout="removeShadow(this)"
+          >
             <p>Burbank</p>
           </button>
         </div>
         <div class="city-box">
-          <button id="nd-city-btn" onclick="alert('Loading weather report...')">
+          <button
+            id="nd-city-btn"
+            onclick="alert('Loading weather report...')"
+            onmouseover="addShadow(this)"
+            onmouseout="removeShadow(this)"
+          >
             <p>Chicago</p>
           </button>
         </div>
         <div class="city-box">
-          <button id="rd-city-btn" onclick="alert('Loading weather report...')">
+          <button
+            id="rd-city-btn"
+            onclick="alert('Loading weather report...')"
+            onmouseover="addShadow(this)"
+            onmouseout="removeShadow(this)"
+          >
             <p>Dallas</p>
           </button>
         </div>
@@ -53,7 +68,11 @@
     <hr id="horz-line" />
     <!-- Temperature display box -->
     <div id="temps-display-box">
-      <div id="today-temp-box">
+      <div
+        id="today-temp-box"
+        onmouseover="addShadow(this)"
+        onmouseout="removeShadow(this)"
+      >
         <div class="text-box">
           <div>
             <h3 class="day-text">Today</h3>
@@ -82,7 +101,8 @@
           </div>
         </div>
       </div>
-      <div id="tomorrow-temp-box">
+      <div id="tomorrow-temp-box" onmouseover="addShadow(this)"
+      onmouseout="removeShadow(this)">
         <div class="text-box">
           <div>
             <h3 class="day-text">Tomorrow</h3>
@@ -111,7 +131,8 @@
           </div>
         </div>
       </div>
-      <div id="friday-temp-box">
+      <div id="friday-temp-box" onmouseover="addShadow(this)"
+      onmouseout="removeShadow(this)">
         <div class="text-box">
           <div>
             <h3 class="day-text">Friday</h3>
@@ -140,7 +161,8 @@
           </div>
         </div>
       </div>
-      <div id="saturday-temp-box">
+      <div id="saturday-temp-box" onmouseover="addShadow(this)"
+      onmouseout="removeShadow(this)">
         <div class="text-box">
           <div>
             <h3 class="day-text">Saturday</h3>
