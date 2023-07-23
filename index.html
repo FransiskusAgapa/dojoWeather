@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header box -->
+    <div id="header-box">
+      <!--header text box -->
+      <div id="header-title-box">
+        <h1 id="title">DCityWeather</h1>
+      </div>
+      <!--Header cities box -->
+      <div id="header-cities-box">
+        <div class="city-box">
+          <button id="st-city-btn" onclick="alert('Loading weather report...')">
+            <p>Burbank</p>
+          </button>
+        </div>
+        <div class="city-box">
+          <button id="nd-city-btn" onclick="alert('Loading weather report...')">
+            <p>Chicago</p>
+          </button>
+        </div>
+        <div class="city-box">
+          <button id="rd-city-btn" onclick="alert('Loading weather report...')">
+            <p>Dallas</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--sub city box -->
+    <div id="sub-city-box">
+      <div id="sub-city-name">
+        <h2 id="sub-city-name">San Jose</h2>
+      </div>
+      <div id="sub-city-temp-box">
+        <div id="sub-city-temp-text">
+          <p>Show temperature in</p>
+        </div>
+        <div id="sub-city-temp-change">
+          <select name="curr-temp" onclick="changeTemp(this)">
+            <!--function-->
+            <option>°C</option>
+            <option>°F</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <hr id="horz-line" />
+    <!-- Temperature display box -->
+    <div id="temps-display-box">
+      <div id="today-temp-box">
+        <div class="text-box">
+          <div>
+            <h3 class="day-text">Today</h3>
+          </div>
+        </div>
+        <div class="weather-icon-box">
+          <div>
+            <img
+              class="weather-icon"
+              src="./assets/assets/some_rain.png"
+              alt="some rain"
+            />
+          </div>
+        </div>
+        <div class="weather-text-box">
+          <div>
+            <p class="weather-text">Some Rain</p>
+          </div>
+        </div>
+        <div class="temp-num-box">
+          <div class="red-num-box">
+            <p id="today-red-num">24°</p>
+          </div>
+          <div class="blue-num-box">
+            <p id="today-blue-num">18°</p>
+          </div>
+        </div>
+      </div>
+      <div id="tomorrow-temp-box">
+        <div class="text-box">
+          <div>
+            <h3 class="day-text">Tomorrow</h3>
+          </div>
+        </div>
+        <div class="weather-icon-box">
+          <div>
+            <img
+              class="weather-icon"
+              src="./assets/assets/some_sun.png"
+              alt="some rain"
+            />
+          </div>
+        </div>
+        <div class="weather-text-box">
+          <div>
+            <p class="weather-text">Some Sun</p>
+          </div>
+        </div>
+        <div class="temp-num-box">
+          <div class="red-num-box">
+            <p id="tom-red-num">27°</p>
+          </div>
+          <div class="blue-num-box">
+            <p id="tom-blue-num">19°</p>
+          </div>
+        </div>
+      </div>
+      <div id="friday-temp-box">
+        <div class="text-box">
+          <div>
+            <h3 class="day-text">Friday</h3>
+          </div>
+        </div>
+        <div class="weather-icon-box">
+          <div>
+            <img
+              class="weather-icon"
+              src="./assets/assets/some_clouds.png"
+              alt="some rain"
+            />
+          </div>
+        </div>
+        <div class="weather-text-box">
+          <div>
+            <p class="weather-text">Some Clouds</p>
+          </div>
+        </div>
+        <div class="temp-num-box">
+          <div class="red-num-box">
+            <p id="fri-red-num">21°</p>
+          </div>
+          <div class="blue-num-box">
+            <p id="fri-blue-num">16°</p>
+          </div>
+        </div>
+      </div>
+      <div id="saturday-temp-box">
+        <div class="text-box">
+          <div>
+            <h3 class="day-text">Saturday</h3>
+          </div>
+        </div>
+        <div class="weather-icon-box">
+          <div>
+            <img
+              class="weather-icon"
+              src="./assets/assets/some_sun.png"
+              alt="some rain"
+            />
+          </div>
+        </div>
+        <div class="weather-text-box">
+          <div>
+            <p class="weather-text">Some Sun</p>
+          </div>
+        </div>
+        <div class="temp-num-box">
+          <div class="red-num-box">
+            <!--°26-->
+            <p id="sat-red-num">26°</p>
+          </div>
+          <div class="blue-num-box">
+            <p id="sat-blue-num">21°</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cookies-box">
+      <div id="cookie-icon-box">
+        <img id="cookie-icon" src="./assets/assets/cookie.png" alt="cookie" />
+      </div>
+      <div id="cookies-text-box">
+        <div>
+          <h3 id="cookie-head">Stop! Cookie Time</h3>
+          <p id="cookie-text">
+            We use cookies (sadly not the edible ones) to personalize content
+            and ads, to provide social media lectures and to analyze our
+            traffic.<a href="#">Read more...</a>
+          </p>
+        </div>
+      </div>
+      <div id="cookie-button-box">
+        <div>
+          <button id="cookie-btn" onclick="removeCookie()">I Accept</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<!-- ALL WEATHER HAVE THE SAME DISPLAY -->

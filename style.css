@@ -1,0 +1,251 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* header box */
+#header-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: lightblue;
+  height: 100px;
+  border-radius: 10px;
+}
+
+/* box for the title 'dojo weather' */
+#header-title-box {
+  height: 70px;
+  width: 200px;
+  font-size: 20px;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  color: white;
+}
+
+/* box of cities in the header box */
+#header-cities-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 450px;
+}
+
+/* city boxes */
+#city-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* buttons of the cities */
+#st-city-btn,
+#nd-city-btn,
+#rd-city-btn {
+  background-color: lightblue;
+  color: white;
+  font-size: 25px;
+  border: none;
+}
+
+/*sub city city -> box for San Jose */
+#sub-city-box {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* sub city name */
+#sub-city-name {
+  width: 100px;
+  margin-right: 300px;
+}
+
+/* sub city temp box*/
+#sub-city-temp-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 250px;
+  height: 45px;
+  margin-right: 50px;
+}
+
+/* horizontal line under 'San Jose ' text */
+#horz-line {
+  width: 1018px;
+  margin: auto;
+  margin-right: 455px;
+}
+
+/* temperatures display box */
+#temps-display-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 500px;
+  margin-top: 15px;
+}
+
+/* today, tomorrow, friday, and saturday temperature display */
+#today-temp-box,
+#tomorrow-temp-box,
+#friday-temp-box,
+#saturday-temp-box {
+  margin-left: 110px;
+  background-color: rgb(240, 235, 235);
+  height: 500px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+#today-temp-box {
+  margin-left: 365px;
+}
+
+#saturday-temp-box {
+  margin-right: 450px;
+}
+
+/* today, tommrow, friday, saturday text box */
+.text-box {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* the day text */
+.day-text {
+  font-size: 30px;
+}
+
+/* today, tomorrow, friday, saturday weather icon box */
+.weather-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  height: 100px;
+}
+
+/* some rain, sun, and clouds icons */
+.weather-icon {
+  height: 150;
+  width: 130px;
+  border-radius: 70px;
+}
+
+/* today, tomorrow, friday, and saturday weather text box */
+.weather-text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+/* text under weather icons */
+.weather-text {
+  font-size: 23px;
+}
+
+/*temperature number box */
+.temp-num-box {
+  margin-top: 70px;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* red and blue temperature number box */
+.red-num-box,
+.blue-num-box {
+  /* border: 2px solid red; */
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* today red num */
+#today-red-num,
+#tom-red-num,
+#fri-red-num,
+#sat-red-num {
+  color: red;
+  font-size: 20px;
+}
+
+#today-blue-num,
+#tom-blue-num,
+#fri-blue-num,
+#sat-blue-num {
+  color: blue;
+  font-size: 20px;
+}
+
+/* cookies box */
+#cookies-box {
+  border: 2px solid black;
+  background-color: rgb(240, 235, 235);
+  width: 1040px;
+  height: 200px;
+  margin: auto;
+  margin-top: 20px;
+  margin-right: 450px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  position: fixed;
+  left: 200px;
+}
+
+/* cookies image */
+#cookie-icon {
+  margin-top: 45px;
+  width: 100px;
+}
+
+/* cookies text box */
+#cookies-text-box {
+  width: 700px;
+}
+
+/* shared properties between 'cookie head' and 'cookie text' */
+#cookie-head,
+#cookie-text {
+  margin-top: 22px;
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+/* cookies button box */
+#cookie-button-box {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* accept cookie button */
+#cookie-btn {
+  width: 90px;
+  height: 25px;
+  border: 3px solid black;
+  background-color: lightblue;
+  box-shadow: 3px 3px 5px;
+}
