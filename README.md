@@ -1,1 +1,3 @@
-This is initial commit!
+Latest update:
+
+- simple buttons animations
